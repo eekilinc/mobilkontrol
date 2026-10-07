@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/coder/.gradle/daemon/8.7/com.mobilkontrol.app-debug-63:/drawable_ic_launcher.xml.flat",
+        "source": "/home/coder/.gradle/daemon/8.7/com.mobilkontrol.app-main-65:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/coder/.gradle/daemon/8.7/com.mobilkontrol.app-debug-63:/xml_accessibility_config.xml.flat",
+        "source": "/home/coder/.gradle/daemon/8.7/com.mobilkontrol.app-main-65:/xml/accessibility_config.xml"
+    },
+    {
+        "merged": "com.mobilkontrol.app-debug-63:/layout_widget_remaining.xml.flat",
+        "source": "com.mobilkontrol.app-main-65:/layout/widget_remaining.xml"
+    },
+    {
+        "merged": "com.mobilkontrol.app-debug-63:/xml_widget_info.xml.flat",
+        "source": "com.mobilkontrol.app-main-65:/xml/widget_info.xml"
+    },
+    {
+        "merged": "/home/coder/.gradle/daemon/8.7/com.mobilkontrol.app-debug-63:/xml_device_admin.xml.flat",
+        "source": "/home/coder/.gradle/daemon/8.7/com.mobilkontrol.app-main-65:/xml/device_admin.xml"
+    }
+]

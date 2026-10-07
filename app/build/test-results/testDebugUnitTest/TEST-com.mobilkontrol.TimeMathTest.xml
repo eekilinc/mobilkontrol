@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mobilkontrol.TimeMathTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-07T11:04:34" hostname="DESKTOP-V0C0MQC" time="0.001">
+  <properties/>
+  <testcase name="remaining_never_negative" classname="com.mobilkontrol.TimeMathTest" time="0.001"/>
+  <testcase name="remaining_is_limit_plus_bonus_minus_used" classname="com.mobilkontrol.TimeMathTest" time="0.0"/>
+  <testcase name="fraction_is_clamped" classname="com.mobilkontrol.TimeMathTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

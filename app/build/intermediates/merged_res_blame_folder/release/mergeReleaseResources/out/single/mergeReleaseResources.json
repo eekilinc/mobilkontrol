@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.mobilkontrol.app-release-60:/xml_widget_info.xml.flat",
+        "source": "com.mobilkontrol.app-main-61:/xml/widget_info.xml"
+    },
+    {
+        "merged": "com.mobilkontrol.app-release-60:/xml_accessibility_config.xml.flat",
+        "source": "com.mobilkontrol.app-main-61:/xml/accessibility_config.xml"
+    },
+    {
+        "merged": "com.mobilkontrol.app-release-60:/drawable_ic_launcher.xml.flat",
+        "source": "com.mobilkontrol.app-main-61:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.mobilkontrol.app-release-60:/xml_device_admin.xml.flat",
+        "source": "com.mobilkontrol.app-main-61:/xml/device_admin.xml"
+    },
+    {
+        "merged": "com.mobilkontrol.app-release-60:/layout_widget_remaining.xml.flat",
+        "source": "com.mobilkontrol.app-main-61:/layout/widget_remaining.xml"
+    }
+]

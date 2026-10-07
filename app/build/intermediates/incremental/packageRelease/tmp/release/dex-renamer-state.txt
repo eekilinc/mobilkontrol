@@ -1,0 +1,7 @@
+#Wed Oct 07 14:04:35 TRT 2026
+base.1=/home/coder/mobilkontrol/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
+path.1=classes2.dex
+base.0=/home/coder/mobilkontrol/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

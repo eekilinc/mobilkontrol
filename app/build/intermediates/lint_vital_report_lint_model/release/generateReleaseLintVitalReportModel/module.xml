@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/home/coder/mobilkontrol/app"
+    name=":app"
+    type="APP"
+    maven="MobilKontrol:app:unspecified"
+    agpVersion="8.5.2"
+    buildFolder="build"
+    bootClassPath="/home/coder/buildtools/sdk/platforms/android-35/android.jar:/home/coder/buildtools/sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-35"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
