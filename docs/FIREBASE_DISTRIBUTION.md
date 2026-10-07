@@ -21,7 +21,11 @@ Play Store'a girmeden APK'yı test kullanıcılarına gönderir. Play Protect "g
 | Secret | Değer |
 |---|---|
 | `FIREBASE_SERVICE_ACCOUNT` | `xxx.json` dosyasının **tüm içeriği** (tek satır, `{...}`) |
-| `FIREBASE_PROJECT_ID` | `mobilkontrol` |
+| `FIREBASE_PROJECT_ID` | `mobilkontrol-3aa4a` |
+| `FIREBASE_APP_ID` | Firebase Console → Proje Ayarları → "Your apps" → Android uygulamasının **appId** değeri (`1:1234567890:android:xxxx`) |
+
+> Not: Firebase projesine **Android uygulaması eklenmemişse** CLI `--app` bulamaz ve dağıtım yapamaz.
+> Paket adı olarak `com.mobilkontrol` girin.
 
 ## 3) Kullanım
 
