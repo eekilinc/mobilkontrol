@@ -17,6 +17,8 @@ jobs:
       KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
       KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
       KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+      FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
     steps:
       - uses: actions/checkout@v4
 
@@ -49,11 +51,30 @@ jobs:
       - name: Run unit tests
         run: ./gradlew :app:testDebugUnitTest --no-daemon
 
+      - name: Install firebase-tools
+        if: env.FIREBASE_SERVICE_ACCOUNT != ''
+        run: npm install -g firebase-tools
+
+      - name: Create test group
+        if: env.FIREBASE_SERVICE_ACCOUNT != ''
+        run: firebase appdistribution:groups create testers "Test Ebeveynleri" --project "${FIREBASE_PROJECT_ID:-mobilkontrol}" --non-interactive || true
+
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
           path: app/build/outputs/apk/debug/app-debug.apk
+
+      - name: Firebase App Distribution
+        if: env.FIREBASE_SERVICE_ACCOUNT != ''
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase.json
+        run: |
+          echo "$FIREBASE_SERVICE_ACCOUNT" > $GOOGLE_APPLICATION_CREDENTIALS
+          firebase appdistribution:distribute app/build/outputs/apk/release/app-release.apk \
+            --groups testers \
+            --project "${FIREBASE_PROJECT_ID:-mobilkontrol}" \
+            --non-interactive
 
       - name: Upload release APK
         if: env.KEYSTORE_BASE64 != ''
