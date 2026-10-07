@@ -23,8 +23,9 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+      # GitHub ubuntu runner'larında Android SDK hazır gelir; ayrı kurulum gerekmiyor.
+      - name: Ensure Android SDK 35
+        run: yes | sdkmanager "platforms;android-35" "build-tools;35.0.0" >/dev/null || true
 
       - name: Decode keystore
         if: env.KEYSTORE_BASE64 != ''
